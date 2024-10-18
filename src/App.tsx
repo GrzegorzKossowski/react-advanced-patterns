@@ -1,13 +1,19 @@
 // import ScreenSplitter from "./patterns/screen-splitter/ScreenSplitter";
 // import ScreenSplitterChildren from "./patterns/screen-splitter/ScreenSplitterChildren";
 // import RegularListExample from "./patterns/lists/RegularList";
+// import ModalExample from "./patterns/modal/Modal";
+// import DataSourceLoaderExample from "./patterns/container-components/DataSourceLoader";
+// import RenderPropsLoaderExample from "./patterns/container-components/RenderPropsLoader";
+// import LocalStorageLoaderExample from "./patterns/container-components/LocalStorageLoader";
 
-import ModalExample from "./patterns/modal/Modal";
 
 function App() {
   return (
     <>
-      <ModalExample />
+      {/* <LocalStorageLoaderExample /> */}
+      {/* <RenderPropsLoaderExample /> */}
+      {/* <DataSourceLoaderExample /> */}
+      {/* <ModalExample /> */}
       {/* <RegularListExample/> */}
       {/* <ScreenSplitterChildren>
         <div>Left Child</div>

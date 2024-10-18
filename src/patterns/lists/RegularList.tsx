@@ -34,6 +34,13 @@ const AuthorListFullItem = ({ author }: { author: IAuthor }) => {
   );
 };
 
+/**
+ * Shows generic list of elements.
+ * @param items array of elements
+ * @param sourceKeyName name of an element to use it as key in ItemComponent
+ * @param ItemComponent React Component to show single element of items
+ * @returns React.ElementType
+ */
 const RegularList = <T extends { id: number | string }>({
   items,
   sourceKeyName,
