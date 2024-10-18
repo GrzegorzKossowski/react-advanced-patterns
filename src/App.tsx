@@ -2,9 +2,12 @@
 // import ScreenSplitterChildren from "./patterns/screen-splitter/ScreenSplitterChildren";
 // import RegularListExample from "./patterns/lists/RegularList";
 
+import ModalExample from "./patterns/modal/Modal";
+
 function App() {
   return (
     <>
+      <ModalExample />
       {/* <RegularListExample/> */}
       {/* <ScreenSplitterChildren>
         <div>Left Child</div>
