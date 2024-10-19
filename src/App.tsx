@@ -5,11 +5,17 @@
 // import DataSourceLoaderExample from "./patterns/container-components/DataSourceLoader";
 // import RenderPropsLoaderExample from "./patterns/container-components/RenderPropsLoader";
 // import LocalStorageLoaderExample from "./patterns/container-components/LocalStorageLoader";
+// import UncontrolledComponentExample from "./patterns/controll-component/UncontrolledComponent";
+// import UncontrolledFlowExample from "./patterns/controller-flow/UncontrolledFlow";
 
+import ControlledFlowExample from "./patterns/controller-flow/ControllerFlow";
 
 function App() {
   return (
     <>
+      <ControlledFlowExample />
+      {/* <UncontrolledFlowExample /> */}
+      {/* <UncontrolledComponentExample /> */}
       {/* <LocalStorageLoaderExample /> */}
       {/* <RenderPropsLoaderExample /> */}
       {/* <DataSourceLoaderExample /> */}
