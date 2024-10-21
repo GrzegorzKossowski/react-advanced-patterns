@@ -7,13 +7,17 @@
 // import LocalStorageLoaderExample from "./patterns/container-components/LocalStorageLoader";
 // import UncontrolledComponentExample from "./patterns/controll-component/UncontrolledComponent";
 // import UncontrolledFlowExample from "./patterns/controller-flow/UncontrolledFlow";
+// import ControlledFlowExample from "./patterns/controller-flow/ControllerFlow";
+// import HocLogComponentExample from "./patterns/hoc/HocLogComponent";
 
-import ControlledFlowExample from "./patterns/controller-flow/ControllerFlow";
+import HocUserInfoComponentExample from "./patterns/hoc/HocUserInfoComponent";
 
 function App() {
   return (
     <>
-      <ControlledFlowExample />
+      <HocUserInfoComponentExample />
+      {/* <HocLogComponentExample /> */}
+      {/* <ControlledFlowExample /> */}
       {/* <UncontrolledFlowExample /> */}
       {/* <UncontrolledComponentExample /> */}
       {/* <LocalStorageLoaderExample /> */}
