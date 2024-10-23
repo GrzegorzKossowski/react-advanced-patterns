@@ -9,13 +9,18 @@
 // import UncontrolledFlowExample from "./patterns/controller-flow/UncontrolledFlow";
 // import ControlledFlowExample from "./patterns/controller-flow/ControllerFlow";
 // import HocLogComponentExample from "./patterns/hoc/HocLogComponent";
+// import HocUserInfoComponentExample from "./patterns/hoc/HocUserInfoComponent";
+// import CustomHookExample from "./patterns/use-custom-hooks/CustomHook";
 
-import HocUserInfoComponentExample from "./patterns/hoc/HocUserInfoComponent";
 
 function App() {
   return (
     <>
-      <HocUserInfoComponentExample />
+      {/* <CustomHookExample
+        id={1}
+        url="https://jsonplaceholder.typicode.com/users"
+      /> */}
+      {/* <HocUserInfoComponentExample /> */}
       {/* <HocLogComponentExample /> */}
       {/* <ControlledFlowExample /> */}
       {/* <UncontrolledFlowExample /> */}
