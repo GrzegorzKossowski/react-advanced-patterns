@@ -11,11 +11,17 @@
 // import HocLogComponentExample from "./patterns/hoc/HocLogComponent";
 // import HocUserInfoComponentExample from "./patterns/hoc/HocUserInfoComponent";
 // import CustomHookExample from "./patterns/use-custom-hooks/CustomHook";
+// import RecursiveExample from "./patterns/recursive-components/RecursiveComponent";
+// import CompositionComponentExample from "./patterns/composition-components/CompositionComponent";
 
+import PartialComponent from "./patterns/composition-components/PartialComponent";
 
 function App() {
   return (
     <>
+      <PartialComponent />
+      {/* <CompositionComponentExample /> */}
+      {/* <RecursiveExample /> */}
       {/* <CustomHookExample
         id={1}
         url="https://jsonplaceholder.typicode.com/users"
