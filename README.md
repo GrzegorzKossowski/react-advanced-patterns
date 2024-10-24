@@ -1,50 +1,59 @@
-# React + TypeScript + Vite
+# React advanced patterns
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## composition components
 
-Currently, two official plugins are available:
+**Composition**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Wykorzystuje kompozycję (has a) do budowy bardziej skomplikowanych komponentów na podstawie bazowego poprzez dodawanie konkretnych właściwości (props).
 
-## Expanding the ESLint configuration
+**Partial**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Wykorzystuje HOC do budowy bardziej skomplikowanych komponentów na podstawie bazowego komponentu poprzez dodawanie dodatkowych właściwości (props + partialProps). Partial umożliwia dodawanie nowych właściwości (decorator pattern)
 
-- Configure the top-level `parserOptions` property like this:
+## Compound components (Card)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Pozwala na tworzenie złożonych komponentów, np. Card, gdzie podkomponenty dodawane są jako metody głównego komponentu.
+
+```jsx
+<Card>
+  <Card.Header />
+  <Card.Body />
+  ...
+</Card>
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## container components
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Pozwala na przejęcie przez komponent rodzica (nadrzędny) sposobu wykonania zadania (np. ładowania danych), poprzez przekazywanie propsów z poziomiu rodzica, a nie samego komponentu dziecka (wyniesienie zależności).
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## controlled flow
+
+Pozwala na swobodne dodawanie kolejnych komponentów procesu składającego się z kroków. Wynosi zarządzanie danymi do rodzica. Np. wypełnianie formularza.
+
+## HOC
+
+Higher Order Components - metody przyjmujące komponenty i dodające im jakieś właściwości (decorator pattern)
+
+## lists components
+
+Pozwala na przekazywanie w propsach zarówno danych, jak i komponentów potomnych tworzących listy dynamiczne. Ponadto pozwala na generyczne wykorzystanie rodzica generującego listę do przyjmowania dowolnych typów propsów.
+
+## modal
+
+Tworzy modal.
+
+## observer component
+
+Tworzy komponent emitujący sygnały (emiter) oraz komponent przyjmujący sygnały (reciever).
+
+## recursive components
+
+Komponenty budujące drzewa na podstawie zagnieżdżonych obiektów danych.
+
+## screen splitter
+
+Dynamiczne rozdzielanie ekranu na sekcje na podstawie przekazanych propsów CSS.
+
+## custom hooks
+
+...
